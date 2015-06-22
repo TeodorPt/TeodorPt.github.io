@@ -23,7 +23,7 @@
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
 	 <style type="text/css">
-	 .skills {display: none;}
+	 .quotes {display: none;}
 	 </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -81,11 +81,11 @@
                     <div class="intro-text">
                         <span class="name">Hi! I'm Teodor</span>
                         <hr class="star-light">
-                        <span class="skills">Computer Scientist</span>
-								<span class="skills">IT Enthusiast</span>
-                        <span class="skills">Computer Engineer</span>
-                        <span class="skills">Student</span>
-                        <span class="skills">Technology Passionate</span>                        
+                        <span class="quotes">Computer Scientist</span>
+								<span class="quotes">IT Enthusiast</span>
+                        <span class="quotes">Computer Engineer</span>
+                        <span class="quotes">Student</span>
+                        <span class="quotes">Technology Passionate</span>                        
                     </div>
                 </div>
             </div>
@@ -524,7 +524,7 @@
 	 <script>  
     (function() {
 
-    var quotes = $(".skills");
+    var quotes = $(".quotes");
     var quoteIndex = -1;
 
     function showNextQuote() {
@@ -537,7 +537,7 @@
 
     showNextQuote();
     
-	})();​
+})();​
 	 </script>
 
 </body>
