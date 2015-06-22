@@ -36,6 +36,9 @@ h1, h2 {
   font-weight: bold;
 }
 
+.skills {
+	display: none;
+}
 /* -------------------------------- 
 
 Modules - reusable parts of our design
@@ -274,9 +277,6 @@ header h1 {
   background: #acb7c0;
   color: white;
   border-radius: 0.25em;
-}
-.skills {
-	display: none;
 }
 .no-touch .cd-timeline-content .cd-read-more:hover {
   background-color: #bac4cb;

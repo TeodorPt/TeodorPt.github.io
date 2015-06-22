@@ -275,9 +275,6 @@ header h1 {
   color: white;
   border-radius: 0.25em;
 }
-.skills {
-	display: none;
-}
 .no-touch .cd-timeline-content .cd-read-more:hover {
   background-color: #bac4cb;
 }
