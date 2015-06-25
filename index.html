@@ -22,9 +22,6 @@
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-	 <style type="text/css">
-	 .quotes {display: none;}
-	 </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -81,11 +78,12 @@
                     <div class="intro-text">
                         <span class="name">Hi! I'm Teodor</span>
                         <hr class="star-light">
-                        <h2 class="quotes">Computer Scientist</h2>
-								<h2 class="quotes">IT Enthusiast</h2>
+                        <h2 id="quotes">Computer Scientist</h2>
+<!--
+			<h2 class="quotes">IT Enthusiast</h2>
                         <h2 class="quotes">Computer Engineer</h2>
                         <h2 class="quotes">Student</h2>
-                        <h2 class="quotes">Technology Passionate</h2>                        
+                        <h2 class="quotes">Technology Passionate</h2>   -->                     
                     </div>
                 </div>
             </div>
@@ -521,25 +519,20 @@
     <script src="js/freelancer.js"></script>
     
     <!-- Fade in/out quotes -->
-	 <script type="text/javascript">
-	 //<![CDATA[  
-    (function() {
+	<script type="text/javascript">
+	 function flashtext(ele,col) {
+            var tmpColCheck = document.getElementById( ele ).style.color;
 
-    var quotes = $(".quotes");
-    var quoteIndex = -1;
-
-    function showNextQuote() {
-        ++quoteIndex;
-        quotes.eq(quoteIndex % quotes.length)
-            .fadeIn(1000)
-            .delay(1000)
-            .fadeOut(1000, showNextQuote);
-    }
-
-    showNextQuote();
-    
-})();​
-//]]>
+              if (tmpColCheck === 'silver') {
+                document.getElementById( ele ).style.color = col;
+              } else {
+                document.getElementById( ele ).style.color = 'silver';
+              }
+            } 
+            
+            setInterval(function() {
+                flashtext('quotes','red');
+            }, 500 );
 	 </script>
 
 </body>
