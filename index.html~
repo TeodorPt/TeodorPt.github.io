@@ -521,10 +521,6 @@
     <script src="js/freelancer.js"></script>
     
     <!-- Fade in/out quotes -->
-	 <script type="text/javascript">
-	 //<![CDATA[  
-    (function() {
-
     var quotes = $(".quotes");
     var quoteIndex = -1;
 
@@ -537,9 +533,9 @@
     }
 
     showNextQuote();
-    
-})();​
-//]]>
+    setInterval(function() {
+		showNextQuote();
+           }, 500 ); //set an interval timer up to repeat the function
 	 </script>
 
 </body>
